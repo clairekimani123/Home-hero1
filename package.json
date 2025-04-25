@@ -1,0 +1,23 @@
+{
+  "name": "home-hero1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clairekimani123/Home-hero1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clairekimani123/Home-hero1/issues"
+  },
+  "homepage": "https://github.com/clairekimani123/Home-hero1#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^4.1.4"
+  }
+}
