@@ -8,6 +8,8 @@ function App() {
 
   return (
     <div className='min-h-screen bg-gray-100 '>
+      <Login />
+       
       <div className='max-w-md mx-auto p-6 bg-white rounded-lg shadow-md'>
         <h1 className='text-3xl font-bold text-primary mb-4'>Welcome to HomeHero</h1>
         <p className='text-lg text-gray-600'>Connect with trusted house managers, babysitters, and urgent assistance providers</p>
@@ -16,8 +18,7 @@ function App() {
         </button>
 
       </div>
-      <Login />
-       
+      
     </div>
   );
 }
