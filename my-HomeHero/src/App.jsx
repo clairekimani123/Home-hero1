@@ -1,23 +1,62 @@
-import { useState } from 'react'
-import './App.css'
+import { Routes,Route, Navigate, Link } from 'react-router-dom';
+import { useAuth } from './firebase/firebase';
+import Home from './components/Home.jsx';
+import Login from './components/Login.jsx';
+import Profiles from './components/Profiles.jsx';
+import Booking from './components/Booking.jsx';
+import Payment from './components/Payment.jsx';
+import BookingForm from './components/BookingForm.jsx';
 import './index.css'
-import Login from './components/Login'
+
+
 
 function App() {
-  const [count, setCount] = useState(null)
+  const {user, loading } = useAuth();
+
+  if (loading) return  <div className="flex justify-center items-center h-screen text-blue-600">Loading...</div>
+
+  if (user && window.location.pathname === '/login') {
+    return <Navigate to="/profiles" />
+  }
+  
 
   return (
     <div className='min-h-screen bg-gray-100 '>
-      <Login />
-       
-      <div className='max-w-md mx-auto p-6 bg-white rounded-lg shadow-md'>
-        <h1 className='text-3xl font-bold text-primary mb-4'>Welcome to HomeHero</h1>
-        <p className='text-lg text-gray-600'>Connect with trusted house managers, babysitters, and urgent assistance providers</p>
-        <button className='mt-4 bg-primary text-gray p-3 rounded-lg hover:bg-blue-200 transition'>
-          Get Started
-        </button>
+      <nav className="bg-primary text-white p-4 flex justify-between items-center">
+        <Link to="/" className="text-2xl font-b0ld">HomeHero</Link>
+        <div className="space-x-4">
+          <Link to="/" className="hover:underline">Home</Link>
+          {user ? (
+            <>
+            <Link to="/profiles"
+            className="hover:underline">Providers</Link>
+            <Link to="/add-bokking" className="hover:underline">Add Booking</Link>
+            <button
+            onClick={() => useAuth().signOutUser()} className="bg-secondary text-white px-4 py-2 rounded-md
+            hover:bg-green-600 transition">Sign Out</button>
+            </>
+          ) :(
+            <Link to="/login" className="hover:underli">Sign In</Link>
 
-      </div>
+          )}
+        </div>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profiles" element={user ? <Profiles />:
+        <Navigate to="/login" />} />
+        <Route path="/booking/:id" element={user ? <Booking />:
+        <Navigate to="/login" />} />
+
+        <Route path="/" element={user ? <Payment />:
+        <Navigate to="/login" />}  />
+
+        <Route path="/" element={user ? <BookingForm />:
+        <Navigate to="/login" />}  />
+      </Routes>
+     
+     
       
     </div>
   );
