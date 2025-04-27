@@ -1,0 +1,23 @@
+{
+    "providers": [
+      {"id": 1, "name": "Claire Wanjohi", "category": "House Manager", "experience": "5 years", "contact": "claire@homehero.ke", "location": "Nairobi"},
+      {"id": 2, "name": "John Kamau", "category": "House Manager", "experience": "3 years", "contact": "john@homehero.ke", "location": "Nairobi"},
+      {"id": 3, "name": "Esther Wambui", "category": "House Manager", "experience": "4 years", "contact": "esther@homehero.ke", "location": "Nairobi"},
+      {"id": 4, "name": "David Njoroge", "category": "House Manager", "experience": "6 years", "contact": "david@homehero.ke", "location": "Nairobi"},
+      {"id": 5, "name": "Mercy Auma", "category": "House Manager", "experience": "2 years", "contact": "mercy@homehero.ke", "location": "Nairobi"},
+      {"id": 6, "name": "Samuel Ochieng", "category": "House Manager", "experience": "3 years", "contact": "samuel@homehero.ke", "location": "Nairobi"},
+      {"id": 7, "name": "Mary Wanjiku", "category": "Babysitter", "experience": "4 years", "contact": "mary@homehero.ke", "location": "Nairobi"},
+      {"id": 8, "name": "Sarah Njeri", "category": "Babysitter", "experience": "2 years", "contact": "sarah@homehero.ke", "location": "Nairobi"},
+      {"id": 9, "name": "Jane Atieno", "category": "Babysitter", "experience": "5 years", "contact": "jane@homehero.ke", "location": "Nairobi"},
+      {"id": 10, "name": "Lucy Muthoni", "category": "Babysitter", "experience": "3 years", "contact": "lucy@homehero.ke", "location": "Nairobi"},
+      {"id": 11, "name": "Grace Wairimu", "category": "Babysitter", "experience": "4 years", "contact": "grace@homehero.ke", "location": "Nairobi"},
+      {"id": 12, "name": "Pauline Nyambura", "category": "Babysitter", "experience": "2 years", "contact": "pauline@homehero.ke", "location": "Nairobi"},
+      {"id": 13, "name": "Peter Otieno", "category": "Urgent Assistance", "experience": "6 years", "contact": "peter@homehero.ke", "location": "Nairobi"},
+      {"id": 14, "name": "Grace Achieng", "category": "Urgent Assistance", "experience": "3 years", "contact": "grace@homehero.ke", "location": "Nairobi"},
+      {"id": 15, "name": "Michael Kariuki", "category": "Urgent Assistance", "experience": "4 years", "contact": "michael@homehero.ke", "location": "Nairobi"},
+      {"id": 16, "name": "Nancy Wangari", "category": "Urgent Assistance", "experience": "5 years", "contact": "nancy@homehero.ke", "location": "Nairobi"},
+      {"id": 17, "name": "Joseph Mbugua", "category": "Urgent Assistance", "experience": "3 years", "contact": "joseph@homehero.ke", "location": "Nairobi"},
+      {"id": 18, "name": "Dorothy Adhiambo", "category": "Urgent Assistance", "experience": "2 years", "contact": "dorothy@homehero.ke", "location": "Nairobi"}
+    ],
+    "bookings": []
+  }
